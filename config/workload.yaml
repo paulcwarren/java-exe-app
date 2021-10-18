@@ -1,0 +1,15 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  name: sample-app-java-exe
+  labels:
+    apps.tanzu.vmware.com/workload-type: web
+spec:
+  params:
+    - name: run-image
+      value: gcr.io/dap-local-workstation/sample-app-java-exe
+  source:
+    git:
+      url: https://github.com/sample-accelerators/tanzu-java-web-app
+      ref:
+        branch: main
