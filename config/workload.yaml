@@ -7,7 +7,7 @@ metadata:
 spec:
   params:
     - name: run-image
-      value: gcr.io/dap-local-workstation/sample-app-java-exe
+      value: harbor-repo.vmware.com/tanzu_desktop/sample-app-java-exe
   source:
     git:
       url: https://github.com/sample-accelerators/tanzu-java-web-app
